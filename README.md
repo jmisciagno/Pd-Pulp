@@ -10,8 +10,8 @@ This is a modification of the original Pd-Pulp found here: https://github.com/lo
 Changes
 ------
 * Added support for MIDI Control messages, program changes, pitchbend, and aftertouch/channel pressure
-* Converted to 64-bit architecture
 * Added support for loading patches from the Pure Data startup path
+* Converted to 64-bit architecture
 
 System Requirements
 ------
