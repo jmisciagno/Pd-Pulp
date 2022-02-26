@@ -1,6 +1,6 @@
 
 
-Pd Pulp for Mac OS X
+Pd Pulp
 ==============
 
 This is an audio plugin that enables you to run pd patches inside your DAW. You can use the automation feature of your DAW to control up to 10 parameters of the loaded pd patch.
