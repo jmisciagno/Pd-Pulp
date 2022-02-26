@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="EDfSFF" name="Pd Pulp FX" projectType="audioplug" version="0.2.1"
+              bundleIdentifier="com.audiosalt.pdpulpfx" includeBinaryInAppConfig="1"
+              buildVST="0" buildVST3="1" buildAU="0" buildRTAS="0" buildAAX="0"
+              pluginName="Pd Pulp MIDI Instrument" pluginDesc="an audio plugin runtime environment for pure data"
+              pluginManufacturer="John Misciagno" pluginManufacturerCode="ASLT"
+              pluginCode="PDLP" pluginChannelConfigs="{1, 1}, {2, 2}" pluginIsSynth="1"
+              pluginWantsMidiIn="1" pluginProducesMidiOut="0" pluginSilenceInIsSilenceOut="0"
+              pluginEditorRequiresKeys="1" pluginAUExportPrefix="PdPulpFxAU"
+              pluginRTASCategory="" aaxIdentifier="com.johnmisciagno.pdpulpfx"
+              pluginAAXCategory="2" companyName="Audiosalt" companyWebsite="audiosalt.com"
+              companyEmail="" pluginIsMidiEffectPlugin="0" pluginFormats="buildVST3"
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginEditorRequiresKeys"
+              displaySplashScreen="1" jucerFormatVersion="1" buildAUv3="0"
+              buildStandalone="0" enableIAA="0" defines="JUCE_MODAL_LOOPS_PERMITTED=1&#10;JUCE_VST3_CAN_REPLACE_VST2=0&#10;JucePlugin_SilenceInProducesSilenceOut=1"
+              pluginRTASDisableBypass="0" pluginRTASDisableMultiMono="0" pluginAAXDisableBypass="0"
+              pluginAAXDisableMultiMono="0">
+  <MAINGROUP id="bHW1xW" name="Pd Pulp FX">
+    <GROUP id="{F7E3C56F-7CAF-CB35-5672-4BC60FA8EA87}" name="Source">
+      <FILE id="H8WXU4" name="FloatParameter.h" compile="0" resource="0"
+            file="../Source/FloatParameter.h"/>
+      <FILE id="PPbMbO" name="exec.cpp" compile="1" resource="0" file="../Source/exec.cpp"/>
+      <FILE id="tmxNMQ" name="MainComponent.cpp" compile="1" resource="0"
+            file="../Source/MainComponent.cpp"/>
+      <FILE id="pxnQUO" name="MainComponent.h" compile="0" resource="0" file="../Source/MainComponent.h"/>
+      <FILE id="Hjz8rB" name="PdBase.cpp" compile="1" resource="0" file="../Source/PdBase.cpp"/>
+      <FILE id="KRmniB" name="PdBase.hpp" compile="0" resource="0" file="../Source/PdBase.hpp"/>
+      <FILE id="o3GCPc" name="PdMidiReceiver.hpp" compile="0" resource="0"
+            file="../Source/PdMidiReceiver.hpp"/>
+      <FILE id="LBXGC9" name="PdReceiver.hpp" compile="0" resource="0" file="../Source/PdReceiver.hpp"/>
+      <FILE id="YyA4VF" name="PdTypes.cpp" compile="1" resource="0" file="../Source/PdTypes.cpp"/>
+      <FILE id="cZL0Ln" name="PdTypes.hpp" compile="0" resource="0" file="../Source/PdTypes.hpp"/>
+      <FILE id="SUAtsx" name="PluginEditor.cpp" compile="1" resource="0"
+            file="../Source/PluginEditor.cpp"/>
+      <FILE id="l8bzNC" name="PluginEditor.h" compile="0" resource="0" file="../Source/PluginEditor.h"/>
+      <FILE id="bK0wnO" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="../Source/PluginProcessor.cpp"/>
+      <FILE id="GXBNLe" name="PluginProcessor.h" compile="0" resource="0"
+            file="../Source/PluginProcessor.h"/>
+      <FILE id="CIIHIh" name="Receiver.cpp" compile="1" resource="0" file="../Source/Receiver.cpp"/>
+      <FILE id="uzHGko" name="Receiver.h" compile="0" resource="0" file="../Source/Receiver.h"/>
+      <FILE id="DDCZj0" name="ringbuffer.c" compile="1" resource="0" file="../Source/ringbuffer.c"/>
+      <FILE id="TtHmQ3" name="ringbuffer.h" compile="0" resource="0" file="../Source/ringbuffer.h"/>
+      <FILE id="V4f7Je" name="SendSlider.cpp" compile="1" resource="0" file="../Source/SendSlider.cpp"/>
+      <FILE id="fH2obh" name="SendSlider.h" compile="0" resource="0" file="../Source/SendSlider.h"/>
+      <FILE id="xSwmoN" name="SliderConfig.h" compile="0" resource="0" file="../Source/SliderConfig.h"/>
+      <FILE id="XPlwYd" name="z_print_util.c" compile="1" resource="0" file="../Source/z_print_util.c"/>
+      <FILE id="k8iiAk" name="z_print_util.h" compile="0" resource="0" file="../Source/z_print_util.h"/>
+      <FILE id="quDJgL" name="z_queued.c" compile="1" resource="0" file="../Source/z_queued.c"/>
+      <FILE id="lqpB3P" name="z_queued.h" compile="0" resource="0" file="../Source/z_queued.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="../../SDKs/VST3 SDK"
+               externalLibraries="pd-osx">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" isDebug="1"
+                       optimisation="1" targetName="Pd Pulp Instrument" headerPath="../../../libpd/pure-data/src&#10;../../../libpd/libpd_wrapper&#10;../../../libpd/libpd_wrapper/util"
+                       libraryPath="../../../libpd/" osxArchitecture="Native"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" isDebug="0"
+                       optimisation="3" targetName="Pd Pulp Instrument" headerPath="../../../libpd/pure-data/src&#10;../../../libpd/libpd_wrapper&#10;../../../libpd/libpd_wrapper/util"
+                       libraryPath="../../../libpd/" osxArchitecture="Native"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="../modules"/>
+        <MODULEPATH id="juce_graphics" path="../modules"/>
+        <MODULEPATH id="juce_events" path="../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../modules"/>
+        <MODULEPATH id="juce_core" path="../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../Applications/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULES id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+             useGlobalPath="1"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULES id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
