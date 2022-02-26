@@ -3,7 +3,7 @@
 Pd Pulp
 ==============
 
-This is an audio plugin that enables you to run pd patches inside your DAW. You can use the automation feature of your DAW to control up to 10 parameters of the loaded pd patch.  Information on using it may be found here: https://github.com/jmisciagno/Pd-Pulp/wiki/Pd-Pulp-Wiki
+This is an audio plugin that enables you to run pd patches inside your DAW. You can use the automation feature of your DAW to control up to 10 parameters of the loaded pd patch.  More information here: https://github.com/jmisciagno/Pd-Pulp/wiki/Pd-Pulp-Wiki
 
 This is a modification of the original Pd-Pulp found here: https://github.com/logsol/Pd-Pulp
 
