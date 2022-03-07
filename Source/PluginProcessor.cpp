@@ -207,7 +207,7 @@ void PureDataAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer
             pd->sendProgramChange(message.getChannel(), message.getProgramChangeNumber());
         }
         if (message.isController()) {
-            pd->sendControlChange(message.getChannel(), message.getControllerNumber(), message.getControllerNumber());
+            pd->sendControlChange(message.getChannel(), message.getControllerNumber(), message.getControllerValue());
         }
     }
     
