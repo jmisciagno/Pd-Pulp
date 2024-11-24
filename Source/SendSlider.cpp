@@ -76,7 +76,7 @@ SendSlider::SendSlider (int index, PureDataAudioProcessor& processor)
     SliderConfig* sc = processor.getParameterList().getUnchecked(index-1)->getSliderConfig();
     slider->setDoubleClickReturnValue(true, sc->defaultValue);
     slider->setRange(sc->min, sc->max, sc->stepSize);
-    slider->setValue(sc->defaultValue);
+    slider->setValue(processor.getParameterList().getUnchecked(index-1)->getValue());
 
     startTimer(25);
     //[/Constructor]

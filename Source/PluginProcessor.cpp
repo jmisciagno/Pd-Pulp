@@ -327,6 +327,7 @@ void PureDataAudioProcessor::setStateInformation (const void* data, int sizeInBy
                     
                     setParameter(parameterElement->getIntAttribute("index"), (float) parameterElement->getDoubleAttribute("value"));
                     setParameterName(parameterElement->getIntAttribute("index"), parameterElement->getStringAttribute("name"));
+
                 }
             }
         }

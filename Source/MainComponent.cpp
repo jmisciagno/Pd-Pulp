@@ -35,11 +35,11 @@ MainComponent::MainComponent (PureDataAudioProcessor& processor)
 
     addAndMakeVisible (sendSlider1 = new SendSlider (1, processor));
     addAndMakeVisible (sendSlider2 = new SendSlider (2, processor));
+    addAndMakeVisible (sendSlider3 = new SendSlider (6, processor));
+    addAndMakeVisible (sendSlider4 = new SendSlider (7, processor));
     addAndMakeVisible (sendSlider5 = new SendSlider (3, processor));
     addAndMakeVisible (sendSlider6 = new SendSlider (4, processor));
     addAndMakeVisible (sendSlider7 = new SendSlider (5, processor));
-    addAndMakeVisible (sendSlider3 = new SendSlider (6, processor));
-    addAndMakeVisible (sendSlider4 = new SendSlider (7, processor));
     addAndMakeVisible (sendSlider8 = new SendSlider (8, processor));
     addAndMakeVisible (sendSlider9 = new SendSlider (9, processor));
     addAndMakeVisible (sendSlider10 = new SendSlider (10, processor));
@@ -149,11 +149,11 @@ MainComponent::~MainComponent()
 
     sendSlider1 = nullptr;
     sendSlider2 = nullptr;
+    sendSlider3 = nullptr;
+    sendSlider4 = nullptr;
     sendSlider5 = nullptr;
     sendSlider6 = nullptr;
     sendSlider7 = nullptr;
-    sendSlider3 = nullptr;
-    sendSlider4 = nullptr;
     sendSlider8 = nullptr;
     sendSlider9 = nullptr;
     sendSlider10 = nullptr;

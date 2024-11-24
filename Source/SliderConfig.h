@@ -18,7 +18,7 @@ class SliderConfig {
 public:
 
     std::string name = "Param";
-    float defaultValue = 0.5;
+    float defaultValue = 0.0;
     float max = 1;
     float min = 0;
     float stepSize = 0.0;

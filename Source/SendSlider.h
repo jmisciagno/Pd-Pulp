@@ -40,7 +40,7 @@ typedef Slider::Listener SliderListener;
 
 class SendSlider  : public Component,
                     public Timer,
-                    public SliderListener,
+                    public Slider::Listener,
                     public LabelListener
 {
 public:
